@@ -42,7 +42,8 @@ imprimirStatement : IMPRIMIR ABRE_PARENTESES expressao FECHA_PARENTESES;
 argumentos : expressao (VIRGULA expressao)*;
 
 expressao
-    : ID
+    : expressao OPERADOR_MATEMATICO expressao
+    | ID
     | acessoLista
     | NUMERO
     | listaExpressao
@@ -50,6 +51,7 @@ expressao
     | TEXTO
     | compreensaoLista
     ;
+
 
 listaExpressao : ABRE_COLCHETES argumentos? FECHA_COLCHETES;
 

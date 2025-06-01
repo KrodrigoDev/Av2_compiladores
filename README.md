@@ -75,5 +75,14 @@ print(f'Resultado da multiplicação de matrizes: {res}')
 
 ## Fase 3 — Análise Semântica
 
-**Status:**  
-🚧 Ainda não iniciada. Em breve!
+**O que foi realizado:**
+
+- Implementação de um visitor personalizado para percorrer a árvore sintática gerada pelo ANTLR.
+- A verificação semântica validou aspectos como:
+  - Atribuição de variáveis com seus respectivos tipos,
+  - Declaração e uso de parâmetros de funções,
+  - Organização de símbolos em uma tabela de símbolos.
+- Geração de mensagens de saída com informações sobre:
+  - Declarações de variáveis e seus tipos (ex: LISTA, NUMERO),
+  - Declarações de funções e seus parâmetros,
+  - Impressão da Tabela de Símbolos ao final da análise.

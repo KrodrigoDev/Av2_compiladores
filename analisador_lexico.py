@@ -17,6 +17,7 @@ padroes_tokens = [
     ('VIRGULA', r','),
     ('PONTO', r'\.'),
     ('SOMA', r'\+'),
+    # ('SUBTRAÇÃO', r'\-'),
     ('MULTIPLICACAO', r'\*'),
     ('TEXTO', r'"[^"]*"|\'[^\']*\''),
     ('NOVA_LINHA', r'\n'),
